@@ -56,3 +56,15 @@ variable "create_ci_profile" {
   description = "Create IAM instance profile and user for use with CI workers deployed to the account"
   default     = false
 }
+
+variable "ssm_account_ids" {
+  type        = list(string)
+  description = "List of account IDs to save in SSM"
+  default     = []
+}
+
+variable "ssm_account_names" {
+  type        = list(string)
+  description = "List of account names (slugs) to save in SSM, must match ssm_account_ids"
+  default     = []
+}
