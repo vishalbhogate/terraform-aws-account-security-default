@@ -40,7 +40,7 @@ data "aws_iam_policy_document" "labs_developer" {
       variable = "rds:DatabaseClass"
       values   = ["*.micro"]
     }
-  }/* 
+  } /* 
   # statement {
   #   sid    = "DenyifAuthorNotProvided"
   #   effect = "Deny"
